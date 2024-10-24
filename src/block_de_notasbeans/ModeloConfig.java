@@ -10,4 +10,23 @@ package block_de_notasbeans;
  */
 public class ModeloConfig {
     
+    private String Titulo;
+
+    public ModeloConfig(String Titulo) {
+        this.Titulo = Titulo;
+    }
+
+    ModeloConfig() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public String getTitulo() {
+        return Titulo;
+    }
+
+    public void setTitulo(String Titulo) {
+        this.Titulo = Titulo;
+    }
+    
+    
 }

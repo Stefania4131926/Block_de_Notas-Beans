@@ -14,7 +14,11 @@ public class Block_De_NotasBeans {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        ModeloConfig MiConfiguracion = new ModeloConfig();
+        VentanaBlock miVistaPrincipal = new VentanaBlock();
+        ControlBlock controlador = new ControlBlock(MiConfiguracion, miVistaPrincipal);
+        controlador.iniciandoControl();
     }
     
 }

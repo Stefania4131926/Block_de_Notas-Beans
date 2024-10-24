@@ -16,9 +16,16 @@ public class ControlBlock {
     public ControlBlock(ModeloConfig MiConfig, VentanaBlock MiVentanaBlock) {
         this.MiConfig = MiConfig;
         this.MiVentanaBlock = MiVentanaBlock;
+        
+        MiConfig.setTitulo("Titulo Dinámico");
     }
     
+    public void iniciandoControl(){
     
+        MiVentanaBlock.setTitle(MiConfig.getTitulo());
+        MiVentanaBlock.setVisible(true);
+    
+    }
     
     
 }
