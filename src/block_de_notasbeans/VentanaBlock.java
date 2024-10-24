@@ -34,8 +34,13 @@ public class VentanaBlock extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
+        menuArchivo = new javax.swing.JMenu();
+        MitemNuevo = new javax.swing.JMenuItem();
+        MitemSalir = new javax.swing.JMenuItem();
+        menuEditar = new javax.swing.JMenu();
+        MitemCopiar = new javax.swing.JMenuItem();
+        MitemCortar = new javax.swing.JMenuItem();
+        MitemPegar = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -46,9 +51,11 @@ public class VentanaBlock extends javax.swing.JFrame {
 
         panelBotonera.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
+        btnNuevo.setIcon(new javax.swing.ImageIcon("C:\\Users\\dam2\\Desktop\\iconos\\anadir.png")); // NOI18N
         btnNuevo.setText("Nuevo");
         panelBotonera.add(btnNuevo);
 
+        btnSalir.setIcon(new javax.swing.ImageIcon("C:\\Users\\dam2\\Desktop\\iconos\\cerrar-sesion (1).png")); // NOI18N
         btnSalir.setText("Salir");
         panelBotonera.add(btnSalir);
 
@@ -62,11 +69,30 @@ public class VentanaBlock extends javax.swing.JFrame {
 
         getContentPane().add(panelCentral, java.awt.BorderLayout.CENTER);
 
-        jMenu1.setText("File");
-        jMenuBar1.add(jMenu1);
+        menuArchivo.setText("Archivo");
 
-        jMenu2.setText("Edit");
-        jMenuBar1.add(jMenu2);
+        MitemNuevo.setIcon(new javax.swing.ImageIcon("C:\\Users\\dam2\\Desktop\\iconos\\anadir.png")); // NOI18N
+        MitemNuevo.setText("Nuevo");
+        menuArchivo.add(MitemNuevo);
+
+        MitemSalir.setIcon(new javax.swing.ImageIcon("C:\\Users\\dam2\\Desktop\\iconos\\cerrar-sesion (1).png")); // NOI18N
+        MitemSalir.setText("Salir");
+        menuArchivo.add(MitemSalir);
+
+        jMenuBar1.add(menuArchivo);
+
+        menuEditar.setText("Editar");
+
+        MitemCopiar.setText("Copiar");
+        menuEditar.add(MitemCopiar);
+
+        MitemCortar.setText("Cortar");
+        menuEditar.add(MitemCortar);
+
+        MitemPegar.setText("Pegar");
+        menuEditar.add(MitemPegar);
+
+        jMenuBar1.add(menuEditar);
 
         setJMenuBar(jMenuBar1);
 
@@ -79,14 +105,19 @@ public class VentanaBlock extends javax.swing.JFrame {
  
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem MitemCopiar;
+    private javax.swing.JMenuItem MitemCortar;
+    private javax.swing.JMenuItem MitemNuevo;
+    private javax.swing.JMenuItem MitemPegar;
+    private javax.swing.JMenuItem MitemSalir;
     private javax.swing.JButton btnNuevo;
     private javax.swing.JButton btnSalir;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JLabel labelEstado;
+    private javax.swing.JMenu menuArchivo;
+    private javax.swing.JMenu menuEditar;
     private javax.swing.JPanel panelBotonera;
     private javax.swing.JPanel panelCentral;
     // End of variables declaration//GEN-END:variables
