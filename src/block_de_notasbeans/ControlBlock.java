@@ -10,4 +10,15 @@ package block_de_notasbeans;
  */
 public class ControlBlock {
     
+    private ModeloConfig MiConfig;
+    private VentanaBlock MiVentanaBlock;
+
+    public ControlBlock(ModeloConfig MiConfig, VentanaBlock MiVentanaBlock) {
+        this.MiConfig = MiConfig;
+        this.MiVentanaBlock = MiVentanaBlock;
+    }
+    
+    
+    
+    
 }
