@@ -26,7 +26,49 @@ public class VentanaBlock extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        labelEstado = new javax.swing.JLabel();
+        panelCentral = new javax.swing.JPanel();
+        panelBotonera = new javax.swing.JPanel();
+        btnNuevo = new javax.swing.JButton();
+        btnSalir = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenu2 = new javax.swing.JMenu();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        labelEstado.setText("Iniciando..");
+        getContentPane().add(labelEstado, java.awt.BorderLayout.PAGE_END);
+
+        panelCentral.setLayout(new java.awt.BorderLayout());
+
+        panelBotonera.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+
+        btnNuevo.setText("Nuevo");
+        panelBotonera.add(btnNuevo);
+
+        btnSalir.setText("Salir");
+        panelBotonera.add(btnSalir);
+
+        panelCentral.add(panelBotonera, java.awt.BorderLayout.PAGE_START);
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane1.setViewportView(jTextArea1);
+
+        panelCentral.add(jScrollPane1, java.awt.BorderLayout.CENTER);
+
+        getContentPane().add(panelCentral, java.awt.BorderLayout.CENTER);
+
+        jMenu1.setText("File");
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("Edit");
+        jMenuBar1.add(jMenu2);
+
+        setJMenuBar(jMenuBar1);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -37,5 +79,15 @@ public class VentanaBlock extends javax.swing.JFrame {
  
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnNuevo;
+    private javax.swing.JButton btnSalir;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JLabel labelEstado;
+    private javax.swing.JPanel panelBotonera;
+    private javax.swing.JPanel panelCentral;
     // End of variables declaration//GEN-END:variables
 }
